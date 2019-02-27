@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id "io.qameta.allure" version '2.7.0'
+}
+
+group 'store.ua'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    compile group: 'com.codeborne', name: 'selenide', version: '5.1.0'
+    compile group: 'io.qameta.allure', name: 'allure-selenide', version: '2.10.0'
+}
+
+test {
+    useJUnitPlatform {
+
+    }
+}
+
+task fastTest(type: Test) {
+    dependsOn 'cleanTest'  // for jenkins reports (make clean run to get fresh JUnit report)
+    useJUnitPlatform {
+        includeTags 'fast'
+    }
+}
+
+
+// To make clean report, we should run './gradlew clean test'
+allure {
+    autoconfigure = true
+    version = '2.10.0'  // Latest Allure Version
+    configuration = 'implementation' //to be seen @Step on allure
+
+    useJUnit5 {
+        version = '2.10.0' // Latest Allure Version
+    }
+}
