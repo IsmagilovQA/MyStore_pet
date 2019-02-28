@@ -50,5 +50,3 @@ public class Tests {
         $(".cat-name").shouldHave(exactText("Casual Dresses"));
     }
 }
-
-// webhook test
