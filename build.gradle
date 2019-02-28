@@ -17,6 +17,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
     compile group: 'com.codeborne', name: 'selenide', version: '5.1.0'
     compile group: 'io.qameta.allure', name: 'allure-selenide', version: '2.10.0'
+
+    compile group: 'com.automation-remarks', name: 'video-recorder-junit5', version: '1.+'
 }
 
 test {

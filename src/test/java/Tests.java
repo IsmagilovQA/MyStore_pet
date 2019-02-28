@@ -14,6 +14,8 @@ import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.addListener;
 
+import com.automation.remarks.junit5.Video;
+
 public class Tests {
 
     @BeforeAll
@@ -37,6 +39,7 @@ public class Tests {
 
 
     @Test
+    @Video
     @Tag("fast")
     @Severity(SeverityLevel.NORMAL)
     @Description("Allure description")
@@ -44,6 +47,6 @@ public class Tests {
         open("/");
         Menu goTo = page(Menu.class);
         goTo.openCasualDresses();
-        $(".cat-name").shouldHave(exactText("Casual Dresses"));
+        $(".cat-name").shouldHave(exactText("Casual Dresses1"));
     }
 }
