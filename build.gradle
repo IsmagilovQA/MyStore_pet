@@ -56,6 +56,7 @@ test {
 }
  */
 
+// For using gradle.properties to configure selenide settings
 tasks.withType(Test) {
     systemProperties = System.properties
     systemProperties 'file.encoding': 'UTF-8'
