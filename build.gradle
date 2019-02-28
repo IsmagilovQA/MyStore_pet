@@ -43,3 +43,22 @@ allure {
         version = '2.10.0' // Latest Allure Version
     }
 }
+
+/*
+test {
+  systemProperties = [
+    'file.encoding': 'UTF-8',
+    'selenide.browser': 'firefox',
+    'gmail.username': System.getProperty('gmail.username', "enter-your-gmail-username"),
+    'gmail.password': System.getProperty('gmail.password', "enter-your-gmail-password")
+  ]
+  testLogging.showStandardStreams = true
+}
+ */
+
+tasks.withType(Test) {
+    systemProperties = System.properties
+    systemProperties 'file.encoding': 'UTF-8'
+
+    outputs.upToDateWhen { false }
+}

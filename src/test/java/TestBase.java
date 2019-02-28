@@ -11,11 +11,8 @@ public class TestBase {
 
     @BeforeAll
     public static void setup() {
-        Configuration.baseUrl = "http://automationpractice.com/index.php";
-        Configuration.browser = "chrome";
-        Configuration.fastSetValue = true;
-        Configuration.headless = true;
-        Configuration.screenshots = false;
+        //Configuration.fastSetValue = true;
+        //Configuration.headless = false;
 
         SelenideLogger.addListener("AllureSelenide",
                 new AllureSelenide().screenshots(true).savePageSource(true));
