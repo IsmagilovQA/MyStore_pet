@@ -10,6 +10,7 @@ Jenkins configurations
 - set check mark ‘Use Gradle Wrapper’;
 - set mark on ‘Make gradlew executable’;
 - set ‘clean test’ or another task like ‘fastTest’ from gradle.build in Task field (to run specific suite/class/tag or something else);
+- set Switches' field as  --scan -s  to generate a build scan and render a stack trace in case of a build failure
 * Config JUnit reports (**/TEST-*.xml);
 * Stop Jenkins: ‘control + c’ in the terminal
 
