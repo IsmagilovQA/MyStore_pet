@@ -24,7 +24,11 @@ dependencies {
 test {
     testLogging.showStandardStreams = true
     useJUnitPlatform {
-
+        excludeTags 'slow'
+        testLogging {
+            events "PASSED", "SKIPPED", "FAILED"
+            exceptionFormat = 'full'
+        }
     }
 }
 
@@ -54,3 +58,20 @@ tasks.withType(Test) {
 
     outputs.upToDateWhen { false }
 }
+
+/*
+test {
+   useJUnit {
+      includeCategories 'org.gradle.junit.CategoryA'
+      excludeCategories 'org.gradle.junit.CategoryB'
+   }
+}
+
+test {
+   include '**my.package.name/*'
+}
+
+test {
+   exclude '**my.package.name/*'
+}
+ */
