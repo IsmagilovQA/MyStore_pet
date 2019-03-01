@@ -29,7 +29,7 @@ Links:
 
 * Go to any gitHub repository, open project settings - Webhooks tab
 * Linking through localhost:8080 is not possible, so we need to get real server address
-* We can use ngrok to simulate real server. Setup server
+* We can use ngrok to simulate real server. Download the ngrok on computer. Open terminal and run './ngrok http 8080' from derictory where ngrok was saved. Copy link from terminal, like 'http://41f311c2.ngrok.io'. This link is a temporary tunnel (whick expires in 8 hours).
 * Put http://bbf7a340.ngrok.io/github-webhook/ address to the Payload URL with github-webhook/ at the end
 * Set content-type as JSON
 * Put checkmark ‘Let me select individual events’ and select Pushes, Pull requests and Active -> Create web hook. So this webhhok will ping Jenkins once we have any changes from GitHub repository
