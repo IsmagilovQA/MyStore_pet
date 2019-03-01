@@ -36,3 +36,16 @@ Links:
 * Go to Jenkins -> Start Jenkins from terminal->Open browser on  http://bbf7a340.ngrok.io/ page -> Go to Configure system -> pass http://bbf7a340.ngrok.io/ as Jenkins URL
 * Go to job settings -> in the section Build Triggers set ‘GitHub hook trigger for GITScm polling’ - Save
 
+Configure Allure2 reporting:
+
+* Jenkins -> go to Manage plains
+* Download Allure plugin
+* Reload Jenkins
+* Manage Jenkins -> Global Tool Configuration -> Find ‘Allure Commandline’ section
+* Set ‘allure2’ as Name
+* Put checkmark ‘Install automatically’
+* Choose From maven central -> select allure version
+* Go to Job settings and in Post build section select Allure report
+* Fill in Path as ‘build/allure-results’
+* Run the job. Allure report will be generated.
+
