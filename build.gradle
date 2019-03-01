@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "io.qameta.allure" version '2.7.0'
+    id 'com.adarshr.test-logger' version '1.6.0'
 }
 
 group 'store.ua'
@@ -75,3 +76,16 @@ test {
    exclude '**my.package.name/*'
 }
  */
+
+testlogger {
+    theme 'mocha-parallel'
+    slowThreshold 1  // ms for test running. set to 1ms for all tests time count in console.
+    showSummary true
+    showPassed true
+    showSkipped true
+    showFailed true
+    showStandardStreams false
+    showPassedStandardStreams true
+    showSkippedStandardStreams true
+    showFailedStandardStreams true
+}
