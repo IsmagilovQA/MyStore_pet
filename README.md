@@ -138,6 +138,7 @@ Configure Allure2 reporting:
  Running tests in parallel using JUnit5 (from version 5.3.0) - it's exepimental.
  - add annotation over class @Execution(ExecutionMode.CONCURRENT)
  - add 'junit-platform.properties' to resources:
+ 
  ```junit.jupiter.execution.parallel.enabled = true
 junit.jupiter.execution.parallel.config.strategy = fixed
 junit.jupiter.execution.parallel.config.fixed.parallelism = 2```
