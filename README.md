@@ -1,4 +1,4 @@
-Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid
+Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid + Running test in parallel using JUnit 5
 
 Jenkins configurations
 
@@ -139,6 +139,8 @@ Configure Allure2 reporting:
  - add annotation over class @Execution(ExecutionMode.CONCURRENT)
  - add 'junit-platform.properties' to resources:
  
- ```junit.jupiter.execution.parallel.enabled = true
+ ```
+junit.jupiter.execution.parallel.enabled = true
 junit.jupiter.execution.parallel.config.strategy = fixed
-junit.jupiter.execution.parallel.config.fixed.parallelism = 2```
+junit.jupiter.execution.parallel.config.fixed.parallelism = 2
+```
