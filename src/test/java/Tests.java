@@ -79,11 +79,6 @@ public class Tests {
         $(".cat-name").shouldHave(exactText("Casual Dresses"));
     }
 
-    @Test
-    public void check() {
-        SimpleClass test1 = new SimpleClass("Ivan", "Kharkov", 21);
-        System.out.println(test1);
-    }
 
     @Test
     public void proxyTest() {

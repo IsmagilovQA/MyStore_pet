@@ -25,6 +25,7 @@ dependencies {
     testCompile group: 'org.testcontainers', name: 'selenium', version: '1.10.6'
 
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.3.0'
 }
 
 

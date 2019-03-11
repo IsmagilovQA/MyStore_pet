@@ -1,4 +1,4 @@
-Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid + Running test in parallel using JUnit 5 + Lombok
+Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid + Running test in parallel using JUnit 5 + Lombok + WebdriverManager + TestContainers
 
 Jenkins configurations
 
