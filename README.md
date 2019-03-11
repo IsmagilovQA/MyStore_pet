@@ -1,4 +1,4 @@
-Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid + Running test in parallel using JUnit 5
+Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests + Selenoid + Running test in parallel using JUnit 5 + Lombok
 
 Jenkins configurations
 
@@ -148,3 +148,9 @@ junit.jupiter.execution.parallel.enabled = true
 junit.jupiter.execution.parallel.config.strategy = fixed
 junit.jupiter.execution.parallel.config.fixed.parallelism = 2
 ```
+///
+
+Lombok setup
+ - add plugin to IDEA
+ - put checkmark in IDEA settings  `Annotation Processing﻿`
+ - add dependency to build.gradle
