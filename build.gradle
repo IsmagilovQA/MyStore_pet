@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id "io.qameta.allure" version '2.7.0'
-    //id 'com.adarshr.test-logger' version '1.6.0'
+    id 'com.adarshr.test-logger' version '1.6.0'
 }
 
 group 'store.ua'
@@ -23,11 +23,13 @@ dependencies {
     testCompile "org.testcontainers:testcontainers:1.10.6"
     testCompile "org.testcontainers:junit-jupiter:1.10.6"
     testCompile group: 'org.testcontainers', name: 'selenium', version: '1.10.6'
+
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
 }
 
 
 test {
-    testLogging.showStandardStreams = true
+    //testLogging.showStandardStreams = true
     reports.html.enabled = false
     useJUnitPlatform {
         excludeTags 'slow'
@@ -39,10 +41,22 @@ test {
     }
 
 
-
     outputs.upToDateWhen { false }
 }
 
+
+testlogger {
+    theme 'mocha-parallel'
+    slowThreshold 1  // ms for test running. set to 1ms for all tests time count in console.
+    showSummary true
+    showPassed true
+    showSkipped true
+    showFailed true
+    showStandardStreams false
+    showPassedStandardStreams true
+    showSkippedStandardStreams true
+    showFailedStandardStreams true
+}
 
 
 /*
@@ -91,20 +105,6 @@ test {
    exclude '**my.package.name/*'
 }
 
-
-
-testlogger {
-    theme 'mocha-parallel'
-    slowThreshold 1  // ms for test running. set to 1ms for all tests time count in console.
-    showSummary true
-    showPassed true
-    showSkipped true
-    showFailed true
-    showStandardStreams false
-    showPassedStandardStreams true
-    showSkippedStandardStreams true
-    showFailedStandardStreams true
-}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '3.3'

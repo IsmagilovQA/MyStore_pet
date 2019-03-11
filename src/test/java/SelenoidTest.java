@@ -16,7 +16,7 @@ public class SelenoidTest {
     @BeforeAll
     public static void setup() {
 
-        // Selenoid conficurations
+        // Selenoid configurations
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVideo", false);
         capabilities.setCapability("enableVNC", true);

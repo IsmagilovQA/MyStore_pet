@@ -106,6 +106,11 @@ public class Tests {
                     + ", " + entry.getTime() + "ms");
         }
         close();
+    }
+
+    @Test
+    public void testmethod(SimpleClass simple) {
+        $("").val(simple.getName());
 
     }
 }
