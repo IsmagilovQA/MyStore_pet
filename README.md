@@ -1,4 +1,4 @@
-Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins
+Pet automation project: Java + Selenide + JUnit5 + gradle + Allure + Jenkins + Video Recorder + Highlighting while running tests
 
 Jenkins configurations
 
@@ -49,3 +49,7 @@ Configure Allure2 reporting:
 * Fill in Path as ‘build/allure-results’
 * Run the job. Allure report will be generated.
 
+
+ - Video Recorder https://github.com/SergeyPirogov/video-recorder-java
+ 
+ - Highlighting while running tests (services -> Highlighter.class)
