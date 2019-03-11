@@ -76,7 +76,7 @@ public class Tests {
         open("/");
         Menu goTo = page(Menu.class);
         goTo.openCasualDresses();
-        $(".cat-name").shouldHave(exactText("Casual Dresses1"));
+        $(".cat-name").shouldHave(exactText("Casual Dresses"));
     }
 
     @Test

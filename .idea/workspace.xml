@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3c5783-394f-4bca-bab4-cc6c50dd138d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestTestContainers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/widgets/SimpleClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/video.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SelenoidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/widgets/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/widgets/Login.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -88,11 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+            <state relative-caret-position="347">
+              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SelenoidTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,6 +156,7 @@
         <option value="$PROJECT_DIR$/video.properties" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SelenoidTest.java" />
       </list>
     </option>
   </component>
@@ -192,26 +199,6 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyStore_pet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyStore_pet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyStore_pet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyStore_pet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyStore_pet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyStore_pet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -247,13 +234,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests.first_test">
-    <configuration name="TestTestContainers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SelenoidTest">
+    <configuration name="SelenoidTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;TestTestContainers&quot;" />
+        <option name="scriptParameters" value="--tests &quot;SelenoidTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -268,12 +255,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests.check" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTestContainers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Tests.check&quot;" />
+        <option name="scriptParameters" value="--tests &quot;TestTestContainers&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -350,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SelenoidTest" />
         <item itemvalue="Gradle.Tests.first_test" />
         <item itemvalue="Gradle.TestTestContainers" />
         <item itemvalue="Gradle.Tests.proxyTest" />
         <item itemvalue="Gradle.Tests.test11" />
-        <item itemvalue="Gradle.Tests.check" />
       </list>
     </recent_temporary>
   </component>
@@ -380,12 +367,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTestContainers - 2019.03.11 at 12h 30m 34s.xml">
-      <configuration name="TestTestContainers" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestTestContainers - 2019.03.11 at 12h 32m 02s.xml">
-      <configuration name="TestTestContainers" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="TestTestContainers - 2019.03.11 at 12h 36m 05s.xml">
       <configuration name="TestTestContainers" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -410,12 +391,18 @@
     <history-entry file="Tests_first_test - 2019.03.11 at 13h 16m 33s.xml">
       <configuration name="Tests.first_test" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="SelenoidTest - 2019.03.11 at 14h 01m 51s.xml">
+      <configuration name="SelenoidTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="SelenoidTest - 2019.03.11 at 14h 03m 55s.xml">
+      <configuration name="SelenoidTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="419" y="91" width="1302" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72777015" visible="true" weight="0.26666668" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72777015" visible="true" weight="0.26666668" />
       <window_info id="Structure" order="1" sideWeight="0.27222982" side_tool="true" weight="0.24697337" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -424,7 +411,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33242133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33242133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,8 +625,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        <state relative-caret-position="347">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SelenoidTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
