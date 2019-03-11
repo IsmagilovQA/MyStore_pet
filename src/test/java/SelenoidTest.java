@@ -1,12 +1,16 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import widgets.Menu;
 
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.*;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class SelenoidTest {
 
     @BeforeAll
@@ -14,7 +18,7 @@ public class SelenoidTest {
 
         // Selenoid conficurations
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVideo", true);
+        capabilities.setCapability("enableVideo", false);
         capabilities.setCapability("enableVNC", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = "http://localhost:4444/wd/hub";
@@ -24,10 +28,23 @@ public class SelenoidTest {
     }
 
     @Test
-    public void testSelenoid() {
+    public void testSelenoid_1() {
         open("/");
         Menu goTo = page(Menu.class);
         goTo.openCasualDresses();
         $(".cat-name").shouldHave(exactText("Casual Dresses"));
+    }
+
+    @Test
+    public void testSelenoid_2() {
+        open("/");
+        Menu goTo = page(Menu.class);
+        goTo.openCasualDresses();
+        $(".cat-name").shouldHave(exactText("Casual Dresses"));
+    }
+
+    @Test
+    public void testSelenoid_3() {
+        open("https://google.com");
     }
 }

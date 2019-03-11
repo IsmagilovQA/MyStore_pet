@@ -14,8 +14,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.0'
     compile group: 'com.codeborne', name: 'selenide', version: '5.1.0'
     compile group: 'io.qameta.allure', name: 'allure-selenide', version: '2.10.0'
     compile group: 'com.automation-remarks', name: 'video-recorder-junit5', version: '1.+'
@@ -24,6 +24,7 @@ dependencies {
     testCompile "org.testcontainers:junit-jupiter:1.10.6"
     testCompile group: 'org.testcontainers', name: 'selenium', version: '1.10.6'
 }
+
 
 test {
     testLogging.showStandardStreams = true
@@ -37,8 +38,14 @@ test {
         }
     }
 
+
+
     outputs.upToDateWhen { false }
 }
+
+
+
+/*
 
 task fastTest(type: Test) {
     dependsOn 'cleanTest'  // for jenkins reports (make clean run to get fresh JUnit report)
@@ -67,7 +74,8 @@ tasks.withType(Test) {
     outputs.upToDateWhen { false }
 }
 
-/*
+
+
 test {
    useJUnit {
       includeCategories 'org.gradle.junit.CategoryA'
@@ -82,9 +90,8 @@ test {
 test {
    exclude '**my.package.name/*'
 }
- */
 
-/*
+
 
 testlogger {
     theme 'mocha-parallel'
@@ -99,11 +106,9 @@ testlogger {
     showFailedStandardStreams true
 }
 
- */
-
-/*
 task wrapper(type: Wrapper) {
     gradleVersion = '3.3'
 }
+
  */
 

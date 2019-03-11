@@ -132,3 +132,5 @@ Configure Allure2 reporting:
  Configuration.browser = "chrome";
  Configuration.browserSize = "1280x1024";
  */
+ 
+ Video folder by default: /Users/ismagilov/.aerokube/selenoid/video (make sure hidden folders are shown : `defaults write com.apple.finder AppleShowAllFiles YES`)
