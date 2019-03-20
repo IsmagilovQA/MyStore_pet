@@ -105,7 +105,7 @@ public class Tests {
 
     @Test
     public void testmethod(SimpleClass simple) {
-        $("").val(simple.getName());
+        $("").val(simple.getCountry());
 
     }
 }

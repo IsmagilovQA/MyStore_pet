@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.*;
 
 @Execution(ExecutionMode.CONCURRENT)
-public class SelenoidTest {
+public class SelenoidTestWithParallelRunning {
 
     @BeforeAll
     public static void setup() {

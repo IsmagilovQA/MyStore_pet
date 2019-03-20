@@ -111,5 +111,12 @@ task wrapper(type: Wrapper) {
     gradleVersion = '3.3'
 }
 
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    maxParallelForks = (int) (Runtime.runtime.availableProcessors().intdiv(2) ?: 1)
+}
+
  */
 
